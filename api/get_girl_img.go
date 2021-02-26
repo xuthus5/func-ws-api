@@ -90,8 +90,8 @@ func GetGirlImg(w http.ResponseWriter, r *http.Request) {
 		_, _ = w.Write(nil)
 	default:
 		ret, _ := json.Marshal(&GirlImgResponse{
-			Code:    500,
-			Message: "format arg error",
+			Code:    400,
+			Message: "request arg error",
 		})
 		GirlImgWrite(w, ret)
 		return
