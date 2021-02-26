@@ -1,0 +1,12 @@
+{
+  "version": 2,
+  "functions": {
+    "api/get_girl_img.go": {
+      "maxDuration": 5,
+      "includeFiles": "data/data.db"
+    }
+  },
+  "routes": [
+    { "src": "/api/img/mz", "dest": "api/get_girl_img.go" }
+  ]
+}
